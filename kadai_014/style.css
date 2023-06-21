@@ -1,41 +1,31 @@
+/* 文書全体の装飾 */
+  html {
+    font-size: 20px;
+    text-align: center;
+  }
+
+/* h1のプロパティと値 */
+  h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 1.2em;
+    text-shadow: 2px 2px 2px gray;
+    border-bottom: solid 3px rgb(115, 115, 114)
+  }
+
 /* フォントの種類 */
-h1 {
-  font-family: 'Josefin Sans', sans-serif;
-font-family: 'Noto Sans JP', sans-serif;
-}
-body {
-  font-family: "Arial", "Meiryo", sans-serif;
-}
+  body {
+   font-family: "Arial", "Meiryo", sans-serif;
+  }
+  #basic p {
+    font-weight: bold;
+  }
 
-/* フォントのサイズ */
-html {
-  font-size: 20px;
-}
-h1 {
-  font-size: 2rem;
-}
-
-/* フォントカラー */
-.color-blue {
-  color: skyblue;
-}
-.color-pink {
-  color: rgb(255, 192, 203)
-}
-
-/* その他の装飾 */
-html {
-  text-align: center;
-}
-h1 {
-  letter-spacing: 1.2em;
-}
-h1 {
-  text-shadow: 2px 2px 2px gray;
-}
-h1 {
-  border-bottom: solid 3px rgb(115, 115, 114)
-}
-#basic p {
-  font-weight: bold;
-}
+/* フォントのカラー */
+  .color-blue {
+    color: skyblue;
+  }
+  .color-pink {
+    color: rgb(255, 192, 203)
+  }
