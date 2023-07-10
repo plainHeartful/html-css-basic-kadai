@@ -1,0 +1,72 @@
+body { /* header, main, footer の親要素 */
+  margin: 0; /* 先に初期のマージンを0にしておく */
+}
+h1 { /* Webサイト上のページタイトルになる大見出し */
+  margin: 0; /* 先に初期のマージンを0にしておく */
+  color: rgb(255, 255, 255);
+}
+p { /* 全体の文書 */
+  margin: 0; /* 先に初期のマージンを0にしておく */
+  font-size: 20px;
+}
+header { /* h1の親要素 */
+  margin-bottom: 20px;
+  background-color: rgb(244, 79, 79);
+  text-align: center; /* 中の要素を中央揃え */
+}
+main {
+  margin: 10px;
+}
+#parent {
+  display: flex; /* 要素をFlexコンテナにする */
+  justify-content: space-around; /* コンテナの子要素（アイテム）を横方向に均等に配置 アイテム=.contens */
+}
+.contents {
+  border: 3px solid rgb(238, 204, 204); /* 実線の枠線 */
+  flex-basis: 25%; /* 幅を親要素の25％に設定 */
+  padding: 10px 15px;
+  margin: 20px 0;
+  text-align: center;
+}
+.contents p:nth-of-type(2)::first-letter { /* class="contents"の二番目のp要素の一番最初の文字 */
+  font-weight: bold;
+  color: rgb(97, 206, 249);
+}
+.contents img {
+  margin: 10px 0;
+  width: 70%; /* 親要素 (.contents) の70％の幅 */
+}
+h2 {
+  font-size: 25px;
+  border-bottom: 3px dotted rgb(236, 122, 122); /* 点線の下線 */
+}
+h2::before { /* 疑似要素 */
+  content: "●";
+  color: rgb(239, 111, 139);
+}
+footer {
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+}
+a { /* ハイパーリンク */
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+a:visited {
+  color: rgb(193, 234, 251);
+}
+a:hover { /* 疑似クラス */
+  color: rgb(245, 178, 168);
+}
+@media screen and (max-width: 768px) { /* メディアクエリの設定 */ /* 画面の表示幅が768px以下のとき以下のプロパティが有効になる */
+  #parent {
+    display: flex;
+    flex-direction: column;
+  }
+h2 {
+  font-size: 30px;
+}
+p {
+  font-size: 25px;
+}
+}
